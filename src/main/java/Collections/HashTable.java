@@ -9,7 +9,9 @@ public class HashTable {
 		table1.put("City1", "Bellary");
 		table1.put("City2", "NewYork");
 		table1.put("City3", "Bengaluru");
-		
+		table1.put("", "NULL1");
+		table1.put("", "NULL2");
+
 
 		Hashtable<String, String> table2=new Hashtable<String, String>();
 		table2.put("City1", "583101");
@@ -21,6 +23,7 @@ public class HashTable {
 		nest.put("ZipTable",table2);
 		
 		System.out.println(nest.get("NameTable").get("City1"));
+		System.out.println(nest.get("NameTable"));
 		System.out.println(nest.get("ZipTable").get("City2"));
 	}
 
